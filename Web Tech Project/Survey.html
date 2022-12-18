@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        background-color: rgba(129, 215, 255, 0.868);
+    }
+
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 142, 250);
+  margin-top: -12px;
+  margin-left: -18px;
+  width: 102%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-family: 'Broadway';
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(0, 68, 215);
+}
+
+div{
+  font-family: 'Tw Cen MT Condensed';
+  font-size: 35px;
+  color: white;
+  background-color: rgb(0, 142, 250);
+    width: 800px;
+  border: 3px solid rgb(255, 255, 255);
+  padding: 50px;
+  margin: 15px 300px;
+}
+
+form { 
+  display: block;
+  margin-top: 0em;
+  color: white;
+}
+
+input[type=submit]{
+    border: 10px;
+    transition: 1s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(68, 164, 255);
+    height: 35px;
+    width: 250px;
+    border-radius: 15px;
+    font-family: 'Tw Cen MT Condensed';
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 280px;
+    margin-right: 280px;
+}
+
+input[type=submit]:hover{
+    border: 5px rgb(255, 255, 255);
+    background-color: rgb(0, 68, 215);
+}
+
+input[type=text]{
+  width: 70%;
+  border: none;
+  transition: height 0.7s ease-in-out;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+input[type=text]:focus{
+  width: 72%;
+  height: 30px;
+}
+
+input[type=number]{
+  margin-left: 23%;
+  width: 50%;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: height 0.7s ease-in-out;
+}
+input[type=number]:focus{
+  height: 30px;
+}
+
+input[type=radio]{
+  padding: 25px;
+}
+
+input[id=qtext]{
+  margin-left: 23%;
+  width: 50%;
+}
+
+input[id=qtext]:focus{
+  height: 30px;
+  width: 50%;
+}
+
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="C:\Practical\Web Tech Project\Home.html">Home</a></li>
+  <li><a href="C:\Practical\Web Tech Project\Survey.html">Survey</a></li>
+  <li><a href="C:\Practical\Web Tech Project\News.html">News</a></li>
+  <li><a href="C:\Practical\Web Tech Project\About.html">About</a></li>
+  <img style="height: 65px; width: 220px; margin-left: 337px;" src="C:\Practical\Web Tech Project\images\Automate.jpg" alt="Logo">
+  <li style="float:right"><a class="active" href="C:\Practical\Web Tech Project\Contactus.html">Contact us</a></li>
+</ul>
+
+
+
+
+<div>
+  <h1 style="color: rgb(255, 255, 255); text-align: center;">AutoMate Survey Form</h1>
+
+  <form action="C:\Practical\Web Tech Project\thank2.html">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value=""><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" value=""><br><br><br><br>
+  <label for="Q1">Q1.How many Cars do you own currently?</label><br>
+  <input type="number" id="Q1" name="Q1" value=""><br><br>
+  <label for="Q2">Q2.How many Cars have you owned till date?</label><br>
+  <input type="number" id="Q2" name="Q2" value=""><br><br>
+  <label for="Q3">Q3.On a scale of 1 to 10, How frequently do you change Cars?</label><br>
+  <input type="number" id="Q3" name="Q3" value="" maxlength="10"><br><br>
+  <label for="Q4">Q4.What type of Car do you prefer to drive?</label><br>
+  <input type="radio" id="hatchback" name="Q4" value="Hatchback">
+  <label for="Hatchback">Hatchback</label><br>
+  <input type="radio" id="sedan" name="Q4" value="Sedan">
+  <label for="Sedan">Sedan</label><br>
+  <input type="radio" id="suv" name="Q4" value="SUV">
+  <label for="SUV">SUV</label><br><br>
+  <label for="Q5">Q5.Which type of Gearbox do you prefer?</label><br>
+  <input type="radio" id="manual" name="Q5" value="Manual">
+  <label for="Manual">Manual</label><br>
+  <input type="radio" id="automatic" name="Q5" value="Automatic">
+  <label for="Automatic">Automatic</label><br><br>
+  <label for="Q6">Q6.Select the highest priority while buying a car.</label><br>
+  <input type="radio" id="speed" name="Q6" value="Manual">
+  <label for="Manual">Speed</label><br>
+  <input type="radio" id="comfort" name="Q6" value="Comfort">
+  <label for="Manual">Comfort</label><br>
+  <input type="radio" id="mileage" name="Q6" value="Mileage">
+  <label for="Manual">Mileage</label><br>
+  <input type="radio" id="durability" name="Q6" value="Durability">
+  <label for="Manual">Durability</label><br>
+  <input type="radio" id="cost" name="Q6" value="Cost">
+  <label for="Manual">Cost</label><br>
+  <input type="radio" id="size" name="Q5" value="Size">
+  <label for="Manual">Size</label><br>
+  <input type="radio" id="safety" name="Q5" value="Safety">
+  <label for="Manual">Safety</label><br><br>
+  <label for="Q7">Q7.What is your favourite car Brand?</label>
+  <input type="text" id="qtext" name="cbrand" value=""><br><br>
+  <label for="Q8">Q8.What is your dream Car?</label>
+  <input type="text" id="qtext" name="favcar" value=""><br><br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+
+
+</body>
+</html>
+
+

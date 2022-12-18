@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body{
+    background-color: rgba(129, 215, 255, 0.868);
+  }
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 142, 250);
+  margin-top: -12px;
+  margin-left: -18px;
+  width: 102%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-family: 'Broadway';
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(0, 68, 215);
+}
+div{
+  font-family: 'Tw Cen MT Condensed';
+  font-size: 20px;
+  color: white;
+  background-color: rgb(0, 142, 250);
+    width: 800px;
+  border: 3px solid rgb(255, 255, 255);
+  padding: 50px;
+  margin: 15px 300px;
+}
+
+form { text-align: center;
+  display: block;
+  margin-top: 0em;
+  color: white;
+}
+
+input[type="text"]{
+    border: 2p;
+    border-radius: 4px;
+    border-color: white;
+    transition: width 0.4s ease-in-out;
+    width: 30%;
+    padding: 5px 20px;
+    height: 25px;
+    background-color: rgb(0, 142, 250);
+    margin-left: 60px;
+}
+
+input[type="text"]:focus {
+    width: 50%;
+    border: 5px solid rgb(255, 255, 255);
+    background-color: white;
+}
+
+input[id=name]{
+  background-color: white;
+}
+
+input[id=phone]{
+  background-color: white;
+    margin-left: 30px;
+}
+
+input[id=email]{
+  background-color: white;
+    margin-left: 66px;}
+
+
+input[type=submit]{
+    border: 10px;
+    transition: 1s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(68, 164, 255);
+    height: 35px;
+    width: 400px;
+    border-radius: 15px;
+    font-family: 'Tw Cen MT Condensed';
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+input[type=submit]:hover{
+    border: 5px rgb(255, 255, 255);
+    background-color: rgb(0, 68, 215);
+}
+
+</style>
+<script>
+  function check()
+  {
+  pnum = Number(document.getElementById("phone").value);
+
+  if (pnum>9999999999)
+  {
+    window.alert("Please enter a valid mobile number.");
+  }
+  }
+</script>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="C:\Practical\Web Tech Project\Home.html">Home</a></li>
+  <li><a href="C:\Practical\Web Tech Project\Survey.html">Survey</a></li>
+  <li><a href="C:\Practical\Web Tech Project\News.html">News</a></li>
+  <li><a href="C:\Practical\Web Tech Project\About.html">About</a></li>
+  <img style="height: 65px; width: 220px; margin-left: 337px;" src="C:\Practical\Web Tech Project\images\Automate.jpg" alt="Logo">
+  <li style="float:right"><a class="active" href="C:\Practical\Web Tech Project\About.html">Contact us</a></li>
+</ul>
+
+<div>
+    <h1 style="text-align: center;">Get A Callback from our Team.</h1>
+    <form action="C:\Practical\Web Tech Project\Cthank.html">
+       <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value=""><br><br>
+        <label for="phone">Contact No.:</label>
+        <input type="text" id="phone" name="phone" value=""><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" value=""><br><br>
+        <br>
+        <br>
+        <input type="submit" id="callback" value="Get a Callback" onclick="check()">
+    </form>
+</div>
+</body>
+</html>
+
+
